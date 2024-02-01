@@ -1,0 +1,503 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, intial-scale=1">
+   <title>portfolio</title>
+   <style>
+   *{
+        box-sizing: border-box;
+        font-family:Titillium Web;
+   }
+   body
+   {   padding-top: 20px;
+      font-weight: 300;
+            background: #040720;
+      color:  #ff8674;
+   }
+   .width-33
+   {
+       width: 33%;
+       float: left;
+
+   }
+    .width-66
+   {
+       width: 66%;
+       float: left;
+
+   }
+
+   .logo{
+   font-size: 40px;
+   font-weight: 600;
+   }
+
+   .span a{
+     float: right;
+     font-size: 20px;
+     font-weight:400;
+     margin-left: 20px;
+     color: #ff8674;
+     background: white;
+     text-decoration: none;
+     letter-spacing:1px;
+     padding: 1px 15px;
+     border-radius: 10px;
+   } .width{
+       float: left;
+       width: 50%;
+   }
+   .banner{
+       width: 100%;
+       float:left;
+       margin-top: 25vh;
+       text-align :left;
+   }
+   .banner h1{
+       font-size: 35px;
+       margin-top: 10px;
+       font-weight: bolder;
+       letter-spacing: 2px;
+       text-align :left;
+   }
+   .banner h2{
+       font-size: 20px;
+       color:white;
+       line-height: 25px;
+       margin-top:10px;
+       font-weight:400;
+   }
+     .photo{
+          width:100%;
+         height:400px;
+          box-sizing:border-box;
+          display: flex;
+          flex:20%;
+         padding: 50px;
+         align-items:left;
+     }
+     .main-section{
+         width:100%;
+         float: left;
+         padding:110px 0px 110px 0px;
+     }
+     .width-50{
+         width: 100%;
+         float:start;
+     }
+     .mt-20{
+         margin-top: 20px;
+     }
+     .heading-text{
+           width: 100%;
+           float: center;
+           font-size:45px;
+           text-align: center;
+           margin-bottom:50px;
+           color: #ff8674;
+     }
+         .about-us{
+             width: 100%;
+             float: center;
+             padding: 30px;
+             font-size:25px;
+         }
+         .about-us p{
+             font-size: 24px;
+             margin-top: 15px;
+             line-height: 25px;
+             font-family:italic;
+
+         }
+         table{
+             width: 50%;
+             border: 1px solid black;
+             border-collapse: collapse;
+             margin-left:auto;
+              margin-right:auto;
+         }
+         table th {
+             font-size:22px;
+             text-align:start;
+             padding:15px 15px;
+             color:white;
+         }
+         table td {
+             font-size:22px;
+             text-align:start;
+             padding:15px 15px;
+             }
+
+             .skill{
+                 margin-top: 30px;
+                 font-size: 20px;
+                 text-align: center;
+                 text-decoration: none;
+                 font-size:20px;
+             }
+               .skill span{
+                   float: right;
+                   text-decoration: none;
+               }
+               .skill div{
+                   width:80%;
+                   float: left;
+
+                   background:#040720;
+                   border-radius:15px;
+                   text-decoration: none;
+               }
+               .skill div span{
+                   background: #ff8674;
+                   height:5px;
+                   float:right;
+                   letter-spacing:1px;
+                   padding: 2px 15px;
+                   text-decoration: none;
+                   color:white;
+                   font-weight:500;
+                   border-radius:2px;
+                   border-block-color: #ff8674;
+
+               }
+               div [role="progressbar"]{
+                   color:  #ff8674;
+                   text-decoration:black;
+                   font-size:15px;
+                   margin-left:100px;
+                   margin-bottom: 20px;
+                   width: 100px;
+                   height:100px;
+                   border-radius: 50%;
+                   place-items: center;
+                   display: grid;
+                   --pgPercentage:var(--value);
+                   background:radial-gradient(closest-side, black 80%, transparent 0 100% ,black 0),conic-gradient( #ff8674 calc(var(--pgPercentage)* 1%), white 0);
+               }
+                  .heading{
+                      font-size:px;
+                      text-align:center;
+                      font-family:Titillium Web ;
+                  }
+                  .headingtext
+                  {
+                       width: 100%;
+           float: center;
+           font-size:45px;
+           text-align: center;
+           margin-bottom:50px;
+           color: #ff8674;
+
+                  }
+
+                  .service-list{
+                      display:grid;
+                      text-align:center;
+                      padding: 40px;
+                      margin-top:35px;
+                      background: #040720;
+                      border-radius:15px;
+                      width: 94%;
+                      float:left;
+                  }
+                  .service-list i{
+                      font-size:30px;
+                      color:#ff8674;
+                      width:70px;
+                      float:left;
+
+                  }
+                  .service-list h3{
+                      font-size:28px;
+                       margin-top:8px;
+                       margin-bottom:15px;
+                       text-align:left;
+                  }
+                  .service-list p{
+                      font-size:15px;
+                      line-height: 35px;
+                      color:white;
+                     width:400px;
+                     height:200px;
+                     margin: 0PX;
+                     padding:40px;
+                      text-align:center;
+                      background:#454545;
+                  }
+                  .gallery{
+                      width: 66%;
+                      height:auto;
+                      width:60%;
+                     display:block;
+                     margin-left: auto;
+                     margin-right:auto;
+
+                      align-items: center;
+
+                  }
+                  .gallery img{
+                      height:auto;
+                      width:60%;
+                     display:block;
+                     margin-left: auto;
+                     margin-right:auto;
+                     align-items:auto;
+                  }
+                  .form{
+
+                      display: flex;
+                      flex-direction: column;
+                      align-items: center;
+                      justify-content: center;
+                      padding:20px;
+                      font-size:25px;
+                      float:left;
+                      color:#ff8674;
+                  }
+                  input{
+                       display: flex;
+                      flex-direction: column;
+                      align-items: center;
+                      justify-content: center;
+                       float:left;
+                       color:grey;
+                      font-size:15px;
+                      color:#ff8674;
+                      width:50%;
+
+                  }
+                   .button{
+                       cursor:pointer;
+                       padding: 15px 32px;
+                       margin:4px 2px;
+                       color:#ff8674;
+                       background-color:white;
+                       text-align:center;
+                       display:inline-block;
+                       font-size:15px;
+                       align-items:center;
+
+                       }
+                       .button1{
+                           background-color: #ff8674;
+                           color:black;
+                           font-family: monospace;
+                       }
+
+</style>
+   <body>
+  <div class="width-33 logo">Port<span class="span-col"><font color="white">folio</span></div>
+  <div class="width-66">
+
+
+       <div class="span">
+       <a href="#"><font color=" #ff8674">Home</font></a>
+      <a href="#"><font color="#ff8674">About me</font></a>
+      <a href="#"><font color= #ff8674">My services</font></a>
+      <a href="#"><font color=" #ff8674">Portfolio</font></a>
+       <a href="#"><font color=" #ff8674">My Skills</font></a>
+        <a href="#"><font color=" #ff8674">Contact</font></a>
+
+   </div>
+ </div>
+ <div class="width">
+     <div class="banner">
+         <span class="span-col"><font color="#ff8674">Welcome to cozy.com</span>
+         <h1><i><b><font color="white">COZ'Y</font> <span class="span-col"> FOX</b></i></span></h1>
+         <h2><i><font color="#ff8674">-I am a passionate Graphic Designer from New York.</i></h2>
+         <div class="photo">
+         <img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUYuz3Or_SzA4OIdoCYRL9EDcExBqVVtEhgw&usqp=CAU" alt="photo">
+           </div>
+     </div>
+ </div>
+ <div class="main-section">
+         <div class="width-50">
+         <div class="about-us">
+             <h2 class="heading-text">ABOUT<font color="white"> US</h2>
+             <h3><i>I am available for Graphic Design Project</h3>
+             <p><br><font color="#ff8674">Hi, Iam COZ'Y FOX, from USA.I'm professional Graphic Designer and i am very passionate and dedicated
+             to my work.I enjoy every step of design process from discussion and collaboration to concept and
+             execution too.</i></br></p>
+
+             <div class="width-50" mt-"20">
+                 <table cellspacing="10" cellpadding="10">
+                     <tr>
+                         <th>Name:</th>
+                          <td>Cozy Fox</td>
+                     </tr>
+                     <tr>
+                         <th>Email:</th>
+                          <td>www.cozyfox2024</td>
+                     </tr>
+                     <tr>
+                         <th>Birthday:</th>
+                          <td> 12th march 2003</td>
+                     </tr>
+                     <tr>
+                         <th>Education:</th>
+                          <td>B.A(hons) in Graphic Design & Multimedia in Oxford University </td>
+                     </tr>
+                     <tr>
+                  <th>Phone:</th>
+                    <td>+5092022</td>
+                     </tr>
+                     <tr>
+                         <th>Website:</th>
+                          <td>www.cozy.com</td>
+                     </tr>
+                     <tr>
+                         <th>Freelancer:</th>
+                         <td>Available</td>
+                     </tr>
+                     <tr>
+                        <th>City:</th>
+                         <td>New York</td>
+                     </tr>
+                 </table>
+             </div>
+         </div>
+         </div>
+     </div>
+     <div class="skill section">
+         <div class="container">
+             <h2 class="heading"> SKILL-<font color="white">SET</h2>
+             <div class="skill">
+                 <b>Cinema 4Dimension</b>
+                 <span>95%</span>
+                 <div>
+                     <span style="width:95%"></span>
+                 </div>
+             </div>
+             <div class="skill">
+                 <b>Adobe Photoshop</b>
+                 <span>91%</span>
+                 <div>
+                     <span style="width:91%"></span>
+                 </div>
+             </div>
+             <div class="skill">
+                 <b>Autodesk 3ds Max</b>
+                 <span>85%</span>
+                 <div>
+                     <span style="width:85%"></span>
+                 </div>
+             </div>
+             <div class="skill">
+                 <b>Adobe Illustrator</b>
+                 <span>79%</span>
+                 <div>
+                     <span style="width:79%"></span>
+                 </div>
+             </div>
+             <div class="width-50">
+                 <div class="width-50">
+                     <div role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="--value:65">Art</div>
+                 </div>
+                 <div class="width-50">
+                     <div role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="--value:85">Creative</div>
+                 </div>
+                 <div class="width-50">
+                     <div role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="--value:65">ideas</div>
+                 </div>
+                 <div class="width-50">
+                     <div role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="--value:65">artistic</div>
+                 </div>
+             </div>
+         </div>
+     </div>
+     <div class="main-section">
+     <h2 class="headingtext">SERVICES</h2>
+     <div class="width-50">
+         <div class="service-list">
+
+             <h3><i class="fa fa-chrome"></i><font color="#ff8674"> Web development</h3>
+             <p>It is a long established fact that a reader will be<br>
+              distracted by the readable content of a page when locking as its layout.</p>
+         </div>
+     </div>
+      <div class="width-50">
+         <div class="service-list">
+
+
+             <h3> <i class="fa fa-instagram"></i><font color="#ff8674">Web design</h3>
+             <p>It is a long established fact that a reader will be<br>
+             distracted by the readable content of a page when locking as its layout</p>
+         </div>
+     </div>
+     <div class="width-50">
+         <div class="service-list">
+
+             <h3> <i class="fa fa-reddit"></i><font color="#ff8674">Creative design</h3>
+             <p>It is a long established fact that a reader will be<br>
+              distracted by the readable content of a page when locking as its layout</p>
+         </div>
+     </div>
+
+     <div class="width-50">
+         <div class="service-list">
+             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+             <h3><i class="fa fa-video-camera"></i><font color="#ff8674">Video Editing</h3>
+
+             <p>It is a long established fact that a reader will be distracted by<br>
+             the readable content of a page when locking as its layout</p>
+         </div>
+     </div>
+
+     <div class="width-50">
+         <div class="service-list">
+             <h3><i class="fa fa-camera"></i> <font color="#ff8674">Photography</h3>
+             <p>It is a long established fact that a reader will be distracted by the <br>
+              readable content of a page when locking as its layout</p>
+         </div>
+     </div>
+     <div class="width-50">
+         <div class="service-list">
+
+             <h3> <i class="fa fa-apple"></i><font color="#ff8674">App developing</h3>
+             <p>It is a long established fact that a reader will be distracted by the
+              readable content of a page when locking as its layout</p>
+         </div>
+     </div>
+     </div>
+     <div class="main-section">
+         <h2 class="headingtext">PORT<font color="white">FOLIO</h2>
+         <br>
+         <div class="gallery">
+
+             <img src="https://mail.google.com/mail/u/0?ui=2&ik=ffbf4f3e7a&attid=0.1&permmsgid=msg-a:r2833368740301792720&th=18d4e7fea61e01a7&view=att&disp=safe&realattid=18d4e7fdae95763c81b1" alt="">
+
+          </div>
+     </div>
+      <div class="main-section">
+          <h2 class="headingtext"><i class="fa fa-wifi"></i>  CONNECT WITH ME</h2>
+          <br>
+          <br>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+           <form> <tr>
+
+           <input color="#ff8674" type="text" placeholder="Email"></tr>
+           <br>
+           <br>
+           <br>
+<tr>
+           <input color="#ff8674" type="text" placeholder="Call"></tr>
+           <br>
+           <br>
+             <tr>
+
+                <button class="button button1" align="center" ><b> Stay connected</b></button>   </tr>
+
+
+           </form>
+
+      </div>
+</head>
+
+
+
+</body>
+
+</html>
